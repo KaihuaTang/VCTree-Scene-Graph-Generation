@@ -3,7 +3,7 @@ Code for the Scene Graph Generation part of CVPR 2019 oral paper: "[Learning to 
 
 UGLY CODE WARNING! UGLY CODE WARNING! UGLY CODE WARNING!
 
-The code is directly modified from the project [rowanz/neural-motifs][1]. Most of the Codes about the proposed VCTree are located at lib/tree_lstm/*, and if you occuring any problems that cause you unable to run the project, you can check the issues under [rowanz/neural-motifs][1] first. 
+The code is directly modified from the project [rowanz/neural-motifs][1]. Most of the Codes about the proposed VCTree are located at lib/tree_lstm/*, and if you get any problem that cause you unable to run the project, you can check the issues under [rowanz/neural-motifs][1] first. 
 
 # Dependencies
 - You may follow these commands to establish the environments under Ubuntu system
@@ -30,7 +30,7 @@ Note: You might have to modify the learning rate and batch size, particularly if
 
 
 # How to Train / Evaluation
-0. Note that, most of the parameters are under config.py. The training stages and settings are manipulated through ./scripts/train_vctreenet.sh Each line of command in train_vctreenet.sh needs to manually indicate "-ckpt" model (initial parameters) and "-save_dir" the path to save model. Since we have hybrid learning strategy, each task predcls/sgcls/sgdet will have two options for supervised stage and reinformence finetuning stage, when iteratively switch the stage, the -ckpt should start with previous -save_dir. The first supervised stage will init with [detector checkpoint](https://drive.google.com/open?id=11zKRr2OF5oclFL47kjFYBOxScotQzArX) as mentioned above.
+0. Note that, most of the parameters are under config.py. The training stages and settings are manipulated through ./scripts/train_vctreenet.sh Each line of command in train_vctreenet.sh needs to manually indicate "-ckpt" model (initial parameters) and "-save_dir" the path to save model. Since we have hybrid learning strategy, each task predcls/sgcls/sgdet will have two options for supervised stage and reinformence finetuning stage, respectively, when iteratively switch the stage, the -ckpt should start with previous -save_dir. The first supervised stage will init with [detector checkpoint](https://drive.google.com/open?id=11zKRr2OF5oclFL47kjFYBOxScotQzArX) as mentioned above.
 
 1. Train VG predicate classification (predcls) 
     - stage 1 (supervised stage of hybrid learning): run ./scripts/train_vctreenet.sh 5 
