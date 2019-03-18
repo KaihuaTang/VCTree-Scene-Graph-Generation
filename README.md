@@ -30,7 +30,7 @@ Note: You might have to modify the learning rate and batch size, particularly if
 
 
 # How to Train / Evaluation
-0. Note that, most of the parameters are under config.py. The training stages and settings are manipulated through ./scripts/train_vctreenet.sh Each line of command in train_vctreenet.sh needs to manually indicate "-ckpt" model (initial parameters) and "-save_dir" the path to save model. Since we have hybrid learning strategy, each task predcls/sgcls/sgdet will have two options for supervised stage and reinformence finetuning stage, respectively, when iteratively switch the stage, the -ckpt should start with previous -save_dir. The first supervised stage will init with [detector checkpoint](https://drive.google.com/open?id=11zKRr2OF5oclFL47kjFYBOxScotQzArX) as mentioned above.
+0. Note that, most of the parameters are under config.py. The training stages and settings are manipulated through ./scripts/train_vctreenet.sh Each line of command in train_vctreenet.sh needs to manually indicate "-ckpt" model (initial parameters) and "-save_dir" the path to save model. Since we have hybrid learning strategy, each task predcls/sgcls/sgdet will have two options for supervised stage and reinformence finetuning stage, respectively. When iteratively switch the stages, the -ckpt PATH should start with previous -save_dir PATH. The first supervised stage will init with [detector checkpoint](https://drive.google.com/open?id=11zKRr2OF5oclFL47kjFYBOxScotQzArX) as mentioned above.
 
 1. Train VG predicate classification (predcls) 
     - stage 1 (supervised stage of hybrid learning): run ./scripts/train_vctreenet.sh 5 
@@ -63,6 +63,9 @@ Note: You might have to modify the learning rate and batch size, particularly if
     - OR, You can simply download our sgdet checkpoint: [VCTree/SGDET][5].
 
 
+# Other Things You Need To Know
+When you evaluate your model, you will find 3 metrics are printed: 1st, "R@20/50/100" is what we use to report R@20/50/100 in our paper, 2nd, "cls avg" is corresponding mean recall mR@20/50/100 proposed by our paper, "total R" is another way to calculate recall that used in some previous papers/projects, which is quite tricky and unfair, because it almost always get higher recall. 
+
 # If this paper/project inspires your work, pls cite our work:
 ```
 @inproceedings{tang2018learning,
@@ -76,6 +79,6 @@ Note: You might have to modify the learning rate and batch size, particularly if
 [0]: https://arxiv.org/abs/1812.01880
 [1]: https://github.com/rowanz/neural-motifs
 [2]: https://github.com/rowanz/neural-motifs/tree/master/data/stanford_filtered
-[3]: PredCls_path
-[4]: sgcls_path
+[3]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768059&authkey=APvRgmSUEvf4h8s
+[4]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768060&authkey=ADI-fKq10g-niGk
 [5]: sgdet_path
