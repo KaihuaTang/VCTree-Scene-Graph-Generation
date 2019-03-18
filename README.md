@@ -64,7 +64,8 @@ Note: You might have to modify the learning rate and batch size, particularly if
 
 
 # Other Things You Need To Know
-When you evaluate your model, you will find 3 metrics are printed: 1st, "R@20/50/100" is what we use to report R@20/50/100 in our paper, 2nd, "cls avg" is corresponding mean recall mR@20/50/100 proposed by our paper, "total R" is another way to calculate recall that used in some previous papers/projects, which is quite tricky and unfair, because it almost always get higher recall. 
+- When you evaluate your model, you will find 3 metrics are printed: 1st, "R@20/50/100" is what we use to report R@20/50/100 in our paper, 2nd, "cls avg" is corresponding mean recall mR@20/50/100 proposed by our paper, "total R" is another way to calculate recall that used in some previous papers/projects, which is quite tricky and unfair, because it almost always get higher recall. 
+- The reinforcement part of hybrid learning is still far from satisfactory. Hence if you are interested in imporving our work, you may start with this part.
 
 # If this paper/project inspires your work, pls cite our work:
 ```
@@ -81,4 +82,4 @@ When you evaluate your model, you will find 3 metrics are printed: 1st, "R@20/50
 [2]: https://github.com/rowanz/neural-motifs/tree/master/data/stanford_filtered
 [3]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768059&authkey=APvRgmSUEvf4h8s
 [4]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768060&authkey=ADI-fKq10g-niGk
-[5]: sgdet_path
+[5]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768063&authkey=ADOyKfb6MGR5seI
