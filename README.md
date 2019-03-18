@@ -21,7 +21,7 @@ bash install_package.sh
 
 1. Update the config file with the dataset paths. Specifically:
     - Visual Genome (the VG_100K folder, image_data.json, VG-SGG.h5, and VG-SGG-dicts.json). See data/stanford_filtered/README.md for the steps I used to download these.
-    - You'll also need to fix your PYTHONPATH: ```export PYTHONPATH=/home/rowan/code/scene-graph``` 
+    - You'll also need to fix your PYTHONPATH: ```export PYTHONPATH=/home/YourName/ThePathOfYourProject``` 
 
 2. Compile everything. run ```make``` in the main directory: this compiles the Bilinear Interpolation operation for the RoIs.
 
