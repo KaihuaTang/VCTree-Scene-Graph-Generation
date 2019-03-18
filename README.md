@@ -1,5 +1,5 @@
 # VCTree-Scene-Graph-Generation
-Code for the Scene Graph Generation part of CVPR 2019 oral paper: "[Learning to Compose Dynamic Tree Structures for Visual Contexts][0]" 
+Code for the Scene Graph Generation part of CVPR 2019 oral paper: "[Learning to Compose Dynamic Tree Structures for Visual Contexts][0]", as to the VQA part of this paper, please refer to [KaihuaTang/VCTree-Visual-Question-Answering][6]
 
 UGLY CODE WARNING! UGLY CODE WARNING! UGLY CODE WARNING!
 
@@ -83,3 +83,4 @@ Note: You might have to modify the learning rate and batch size, particularly if
 [3]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768059&authkey=APvRgmSUEvf4h8s
 [4]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768060&authkey=ADI-fKq10g-niGk
 [5]: https://onedrive.live.com/embed?cid=22376FFAD72C4B64&resid=22376FFAD72C4B64%21768063&authkey=ADOyKfb6MGR5seI
+[6]: https://github.com/KaihuaTang/VCTree-Visual-Question-Answering
