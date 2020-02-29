@@ -1,4 +1,7 @@
 # VCTree-Scene-Graph-Generation
+
+**If you like our work, and want to start your own scene graph generation project, you might be interested in our new SGG codebase: [Scene-Graph-Benchmark.pytorch](https://github.com/KaihuaTang/Scene-Graph-Benchmark.pytorch). It's much easier to follow, and provides state-of-the-art baseline models.**
+
 Code for the Scene Graph Generation part of CVPR 2019 oral paper: "[Learning to Compose Dynamic Tree Structures for Visual Contexts][0]", as to the VQA part of this paper, please refer to [KaihuaTang/VCTree-Visual-Question-Answering][6]
 
 UGLY CODE WARNING! UGLY CODE WARNING! UGLY CODE WARNING!
