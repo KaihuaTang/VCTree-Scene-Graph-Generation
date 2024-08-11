@@ -8,6 +8,9 @@ UGLY CODE WARNING! UGLY CODE WARNING! UGLY CODE WARNING!
 
 The code is directly modified from the project [rowanz/neural-motifs][1]. Most of the Codes about the proposed VCTree are located at lib/tree_lstm/*, and if you get any problem that cause you unable to run the project, you can check the issues under [rowanz/neural-motifs][1] first. 
 
+**If my open source projects have inspired you, giving me some sponsorship will be a great help to my subsequent open source work.** 
+[Support my subsequent open source work❤️🙏](https://kaihuatang.github.io/donate.html)
+
 # Dependencies
 - You may follow these commands to establish the environments under Ubuntu system
 ```
